@@ -22,6 +22,11 @@
 
 Check our [GitHub Issues](https://github.com/novusweb3/social-text-share/labels/enhancement) for planned features.
 
+Labels:
+- 🚀 enhancement: New features
+- 🐛 bug: Bug fixes
+- 📝 documentation: Documentation improvements
+- ⭐ good first issue: Good for newcomers
 
 ## Installation
 
