@@ -1,7 +1,10 @@
 [![npm version](https://badge.fury.io/js/social-text-share.svg)](https://badge.fury.io/js/social-text-share)
 # Social Text Share
+
 Author: Adrian Birsan
+
 Version: 1.0.1
+
 Description: A cool and customizable text selection sharing widget for React applications.
 
 
@@ -21,15 +24,6 @@ Description: A cool and customizable text selection sharing widget for React app
 - 📢 Event callbacks
 - 🌙 Dark mode ready
 
-## 🗺 Roadmap
-
-Check our [GitHub Issues](https://github.com/novusweb3/social-text-share/labels/enhancement) for planned features.
-
-Labels:
-- 🚀 enhancement: New features
-- 🐛 bug: Bug fixes
-- 📝 documentation: Documentation improvements
-- ⭐ good first issue: Good for newcomers
 
 ## Installation
 
@@ -82,14 +76,15 @@ share?: React.ReactNode // Custom share icon
 }
 ```
 
-## Props
 
-| Prop | Type | Description |
-|------|------|-------------|
-| className | string | Additional CSS classes |
-| customIcons | object | Custom icons for copy, twitter, and share buttons |
-| theme | object | Custom theme colors |
-| onCopy | function | Callback when text is copied |
-| onShare | function | Callback when text is shared |
+## 🗺 Roadmap
+
+Check our [GitHub Issues](https://github.com/novusweb3/social-text-share/labels/enhancement) for planned features.
+
+Labels:
+- 🚀 enhancement: New features
+- 🐛 bug: Bug fixes
+- 📝 documentation: Documentation improvements
+- ⭐ good first issue: Good for newcomers
 
 License: MIT
