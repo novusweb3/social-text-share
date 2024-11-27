@@ -1,7 +1,7 @@
 {
   "name": "social-text-share",
   "version": "1.0.0",
-  "description": "A beautiful social sharing widget that appears when text is selected in React applications",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
