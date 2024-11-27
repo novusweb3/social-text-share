@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiShare2, FiCopy, FiTwitter } from 'react-icons/fi'
+import { FiShare2, FiCopy } from 'react-icons/fi'
+import { RiTwitterXFill } from 'react-icons/ri' // New X icon
 
 export interface SocialTextShareProps {
   className?: string
   customIcons?: {
     copy?: React.ReactNode
-    twitter?: React.ReactNode
+    x?: React.ReactNode // Changed from twitter to x
     share?: React.ReactNode
   }
   theme?: {
@@ -16,7 +17,7 @@ export interface SocialTextShareProps {
     hoverBg?: string
   }
   onCopy?: (text: string) => void
-  onShare?: (text: string, platform: 'twitter' | 'copy') => void
+  onShare?: (text: string, platform: 'x' | 'copy') => void // Changed from twitter to x
 }
 
 export function SocialTextShare({
@@ -46,10 +47,15 @@ export function SocialTextShare({
 
         if (rect) {
           setSelectedText(text)
-          setPosition({
-            x: rect.left + (rect.width / 2),
-            y: rect.top - 10 + window.scrollY
-          })
+          // Updated positioning logic
+          const scrollX = window.scrollX || window.pageXOffset
+          const scrollY = window.scrollY || window.pageYOffset
+          
+          // Calculate position relative to the viewport
+          const x = rect.left + (rect.width / 2) + scrollX
+          const y = rect.top + scrollY // Position above the selection
+          
+          setPosition({ x, y })
           setShowShare(true)
         }
       } else {
@@ -79,12 +85,12 @@ export function SocialTextShare({
     setShowShare(false)
   }
 
-  const shareOnTwitter = () => {
+  const shareOnX = () => {
     window.open(
       `https://twitter.com/intent/tweet?text=${encodeURIComponent(selectedText)}`,
       '_blank'
     )
-    onShare?.(selectedText, 'twitter')
+    onShare?.(selectedText, 'x')
     setShowShare(false)
   }
 
@@ -96,15 +102,16 @@ export function SocialTextShare({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
           style={{
-            position: 'fixed',
+            position: 'absolute', // Changed from fixed to absolute
             left: position.x,
             top: position.y,
-            transform: 'translate(-50%, -100%)',
+            transform: 'translate(-50%, -120%)', // Adjusted to appear above text
             background: theme.background,
             color: theme.text,
             borderColor: theme.border,
+            zIndex: 9999, // Ensure it's always on top
           }}
-          className={`social-text-share z-[100] flex items-center gap-2 px-3 py-2 rounded-full 
+          className={`social-text-share flex items-center gap-2 px-3 py-2 rounded-full 
             shadow-xl backdrop-blur-sm border ${className}`}
         >
           <button
@@ -115,11 +122,11 @@ export function SocialTextShare({
             {customIcons?.copy || <FiCopy className="w-4 h-4" />}
           </button>
           <button
-            onClick={shareOnTwitter}
+            onClick={shareOnX}
             className="p-2 rounded-full transition-colors hover:bg-white/10"
-            title="Share on Twitter"
+            title="Share on X"
           >
-            {customIcons?.twitter || <FiTwitter className="w-4 h-4" />}
+            {customIcons?.x || <RiTwitterXFill className="w-4 h-4" />}
           </button>
           <div className="w-px h-4" style={{ background: theme.border }} />
           <div className="flex items-center gap-1 text-sm opacity-75">
