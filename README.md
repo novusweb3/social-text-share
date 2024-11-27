@@ -2,8 +2,9 @@
 # Social Text Share
 
 
-
-GIF Here
+<div align="center">
+  <img src="./assets/demo.png" alt="Social Text Share Demo" width="600px" />
+</div>
 
 
 ## Features
@@ -16,6 +17,11 @@ GIF Here
 - 🔧 Custom icons support
 - 📢 Event callbacks
 - 🌙 Dark mode ready
+
+## 🗺 Roadmap
+
+Check our [GitHub Issues](https://github.com/novusweb3/social-text-share/labels/enhancement) for planned features.
+
 
 ## Installation
 
