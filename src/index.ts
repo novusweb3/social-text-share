@@ -1,1 +1,1 @@
-export { SocialTextShare, type SocialTextShareProps } from './SocialTextShare'
+export { SocialTextShare, type SocialTextShareProps } from './SocialTextShare.js'
