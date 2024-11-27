@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FiShare2, FiCopy, FiTwitter } from 'react-icons/fi'
 
-interface SocialTextShareProps {
+export interface SocialTextShareProps {
   className?: string
   customIcons?: {
     copy?: React.ReactNode
@@ -130,4 +130,4 @@ export function SocialTextShare({
       )}
     </AnimatePresence>
   )
-} 
+}

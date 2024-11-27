@@ -1,7 +1,7 @@
 {
-  "name": "text-share-react",
+  "name": "social-text-share",
   "version": "1.0.0",
-  "description": "A text selection sharing widget for React applications",
+  "description": "A beautiful social sharing widget that appears when text is selected in React applications",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,14 +12,6 @@
     "build": "tsc",
     "prepare": "npm run build"
   },
-  "keywords": [
-    "react",
-    "text-selection",
-    "share",
-    "social-share",
-    "text-share",
-    "react-component"
-  ],
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
@@ -29,12 +21,10 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
-    "typescript": "^5.0.0"
-  },
-  "author": "Your Name",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/novusweb3/text-share-react"
+    "typescript": "^5.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "framer-motion": "^10.0.0",
+    "react-icons": "^4.0.0"
   }
 }

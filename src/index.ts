@@ -1,2 +1,1 @@
-export { SocialTextShare } from './SocialTextShare'
-export type { SocialTextShareProps } from './SocialTextShare'
+export { SocialTextShare, type SocialTextShareProps } from './SocialTextShare'
