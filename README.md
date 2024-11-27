@@ -1,5 +1,8 @@
 [![npm version](https://badge.fury.io/js/social-text-share.svg)](https://badge.fury.io/js/social-text-share)
 # Social Text Share
+Author: Adrian Birsan
+Version: 1.0.1
+Description: A cool and customizable text selection sharing widget for React applications.
 
 
 <div align="center">
@@ -89,8 +92,4 @@ share?: React.ReactNode // Custom share icon
 | onCopy | function | Callback when text is copied |
 | onShare | function | Callback when text is shared |
 
-# Author: Adrian Birsan
-# License: MIT
-# Version: 1.0.0
-# Description: A cool and customizable text selection sharing widget for React applications.
-# Repository: https://github.com/novusweb3/social-text-share.git
+License: MIT
