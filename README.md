@@ -77,14 +77,15 @@ share?: React.ReactNode // Custom share icon
 ```
 
 
-## 🗺 Roadmap
+## 🤝 Contributing
 
-Check our [GitHub Issues](https://github.com/novusweb3/social-text-share/labels/enhancement) for planned features.
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
 
-Labels:
-- 🚀 enhancement: New features
-- 🐛 bug: Bug fixes
-- 📝 documentation: Documentation improvements
-- ⭐ good first issue: Good for newcomers
+Check our [GitHub Issues](https://github.com/novusweb3/social-text-share/issues) for planned features or to report bugs.
 
-License: MIT
+## 📝 License
+
+MIT © Adrian Birsan
